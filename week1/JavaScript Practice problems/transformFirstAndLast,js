@@ -1,0 +1,7 @@
+function transformFirstAndLast(arr) {
+var obj = {};
+obj[arr[0]] = arr[arr.length-1]
+return obj
+}
+var arr = ["GUVI", "I", "am", "a geek"];
+console.log(transformFirstAndLast(arr))
