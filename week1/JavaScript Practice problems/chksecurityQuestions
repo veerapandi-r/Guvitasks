@@ -1,0 +1,36 @@
+var securityQuestions = [
+ {
+ question: "What was your first pet’s name?",
+ expectedAnswer: "FlufferNutter"
+ },
+ {
+ question: "What was the model year of your first car?",
+ expectedAnswer: "1985"
+ },
+ {
+ question: "What city were you born in?",
+ expectedAnswer: "NYC"
+ }
+]
+function chksecurityQuestions(securityQuestions,question,ans) {
+    let flag=false;
+    securityQuestions.forEach(function(data)
+    {
+        if(data.question===question&&data.expectedAnswer===ans)
+        {
+            flag=true
+        }
+    })
+ return flag  
+}
+
+//Test case1:
+var ques = "What was your first pet’s name?";
+var ans  =  "FlufferNutter";
+var status2 = chksecurityQuestions(securityQuestions, ques, ans);
+console.log(status2); // true
+//Test case2:
+var ques1 = "What was your first pet’s name?";
+var ans1  =  "DufferNutter";
+var status1 = chksecurityQuestions(securityQuestions, ques1, ans1);
+console.log(status1); // flase
