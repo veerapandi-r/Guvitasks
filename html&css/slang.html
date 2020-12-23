@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap" rel="stylesheet">
+    <style>
+        body{
+            font-family: 'Caveat', cursive;
+        }
+        .container{
+            display: flex;
+            flex-direction: column; 
+            flex-wrap: wrap;
+            align-items: center;
+            position: relative;
+        }
+        .content{
+             width: 60%;
+            -webkit-transform: rotate(-1.5deg);
+            -moz-transform: rotate(-1.5deg);
+            -ms-transform: rotate(-1.5deg);
+            -o-transform: rotate(-1.5deg);
+            transform: rotate(-1.5deg);
+        }
+        h4{
+            position: absolute;
+            left: 42%;
+            right: 42%;
+            top: -0.6%; 
+            width: auto;
+            text-align: center;
+            background-color: black;
+            color: white;
+            font-size: 16px;
+            font-family: sans-serif;
+
+        }
+        .first{
+            padding: 30px;
+            border-top-right-radius: 10px;
+            border-top-left-radius: 10px;
+            background-color: black;
+            color: white;
+            text-align: center;
+            font-size: 30px;
+        }
+        .second{
+            padding: 30px;
+            background-color: wheat;
+            color: black;
+            text-align: center;
+            font-size: 30px;
+        }
+        .third{
+            padding: 30px;
+            background-color: black;
+            color: white;
+            text-align: center;
+            font-size: 30px;
+        }
+        .fourth{
+            padding: 30px;
+            background-color: lightcoral;
+            color: black;
+            text-align: center;
+            font-size: 30px;
+        }
+        .five{
+            padding: 30px;
+            background-color: pink;
+            color: black;
+            text-align: center;
+            font-size: 30px;
+        }
+        .six{
+            padding: 30px;
+            background-color: black;
+            color: white;
+            text-align: center;
+            font-size: 30px;
+        }
+        .seven{
+            padding: 30px;
+            background-color: lightgrey;
+            color: black;
+            text-align: center;
+            font-size: 30px;
+        }
+        .eight{
+            padding: 30px;
+            background-color: black;
+            color: white;
+            text-align: center;
+            font-size: 30px;
+        }
+        .nine{
+            padding: 30px;
+            background-color: rgb(202, 187, 150);
+            color: black;
+            text-align: center;
+            font-size: 30px;
+        }
+        .last{
+            font-family:monospace;
+            font-size: 18px;
+            text-align: center;
+            background-color: pink;
+            color:black;
+            padding: 30px;
+        }
+          @media (max-width: 575.98px) {
+            .wrap{
+            border: 5px solid rgba(255, 255, 255, 0.39);;
+            border-bottom: 0px;
+            left: 20%;
+            right: 20%;
+            top: 1%; 
+            width: auto;
+            height : 74%;
+            position: absolute;
+            border-top-left-radius: 30px;
+            border-top-right-radius: 30px;
+            -webkit-transform: rotate(-0.5deg);
+            -moz-transform: rotate(-0.5deg);
+            -ms-transform: rotate(-0.5deg);
+            -o-transform: rotate(-0.5deg);
+            transform: rotate(-0.5deg);
+        }
+           }
+        @media (min-width: 576px) and (max-width: 767.98px) { 
+            .wrap{
+            border: 5px solid rgba(255, 255, 255, 0.39);;
+            border-bottom: 0px;
+            left: 20%;
+            right: 20%;
+            top: 1%; 
+            width: auto;
+            height : 80%;
+            position: absolute;
+            border-top-left-radius: 30px;
+            border-top-right-radius: 30px;
+            -webkit-transform: rotate(-0.5deg);
+            -moz-transform: rotate(-0.5deg);
+            -ms-transform: rotate(-0.5deg);
+            -o-transform: rotate(-0.5deg);
+            transform: rotate(-0.5deg);
+        }
+         }
+        @media (min-width: 768px) and (max-width: 991.98px) { 
+            .wrap{
+            border: 5px solid rgba(255, 255, 255, 0.39);;
+            border-bottom: 0px;
+            left: 25%;
+            right: 25%;
+            top: 1%; 
+            width: auto;
+            height : 82%;
+            position: absolute;
+            border-top-left-radius: 30px;
+            border-top-right-radius: 30px;
+            -webkit-transform: rotate(-0.5deg);
+            -moz-transform: rotate(-0.5deg);
+            -ms-transform: rotate(-0.5deg);
+            -o-transform: rotate(-0.5deg);
+            transform: rotate(-0.5deg);
+        }
+         }
+        @media (min-width: 992px) and (max-width: 1199.98px) { 
+            .wrap{
+            border: 5px solid rgba(255, 255, 255, 0.39);;
+            border-bottom: 0px;
+            left: 25%;
+            right: 25%;
+            top: 1%; 
+            width: auto;
+            height : 85%;
+            position: absolute;
+            border-top-left-radius: 30px;
+            border-top-right-radius: 30px;
+            -webkit-transform: rotate(-0.5deg);
+            -moz-transform: rotate(-0.5deg);
+            -ms-transform: rotate(-0.5deg);
+            -o-transform: rotate(-0.5deg);
+            transform: rotate(-0.5deg);
+        }
+         }
+         @media (min-width: 1200px) { .wrap{
+            border: 5px solid rgba(255, 255, 255, 0.39);;
+            border-bottom: 0px;
+            left: 25%;
+            right: 25%;
+            top: 1%; 
+            width: auto;
+            height : 89%;
+            position: absolute;
+            border-top-left-radius: 30px;
+            border-top-right-radius: 30px;
+            -webkit-transform: rotate(-0.5deg);
+            -moz-transform: rotate(-0.5deg);
+            -ms-transform: rotate(-0.5deg);
+            -o-transform: rotate(-0.5deg);
+            transform: rotate(-0.5deg);
+        } }
+    </style>
+</head>
+<body>
+    <div class="container">
+         <div class="content first">
+             <span style="font-size: 60px;">S</span>crolling in web design<br>The long and short of it
+         </div>
+         <div class="content second">
+            <span style="font-size: 60px;">L</span>ong scroll the good stuff<br>Visual Creativity
+        </div>
+        <div class="content third">
+            <span style="font-size: 60px;">S</span>tory Telling<br>Opportunities
+        </div>
+        <div class="content fourth">
+            <span style="font-size: 60px;">S</span>ample interface for<br>Smart Design users
+        </div>
+        <div class="content five">
+            <span style="font-size: 60px;">P</span>unchy straight to<br>The point messaging
+        </div>
+        <div class="content six">
+            <span style="font-size: 60px;">E</span>asier for users to<br>Realise their goal
+        </div>
+        <div class="content seven">
+            <span style="font-size: 60px;">L</span>ong scroll<br>You need to be search engine savy
+        </div>
+        <div class="content eight">
+            <span style="font-size: 60px;">S</span>lower load times
+        </div>
+        <div class="content nine">
+            <span style="font-size: 60px;">A</span>wkward navigation
+        </div>
+        <div class="content last">
+            <span style="font-size: 60px;text-align: center;">I</span>Factory
+            <br>brisbane leading business service . Unde id perferendis quo dolore consequuntur deserunt voluptate. Recusandae neque placeat quia dignissimos architecto suscipit quasi, cum fugiat. Voluptatem pariatur sunt omnis!
+        </div>
+    </div>
+</body>
+</html>
