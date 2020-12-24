@@ -1,0 +1,34 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+}
+.input{
+    font-size: 18pt;
+    background-color: green;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+div{
+    background-color: rgb(238, 228, 228);
+    padding: 10px;
+    width: 410px;
+}
+td{
+    margin: 20px;
+}
+.product{
+    background-color: darkgray;
+    height: 20vh;
+    width: auto;
+}
+@media screen and (max-width: 768px) {
+    tr{
+        display: inline-grid;
+
+    }
+    div{
+        width: fit-content;
+    }
+}

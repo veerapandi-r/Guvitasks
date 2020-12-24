@@ -1,0 +1,48 @@
+*{
+  font-size: 15pt;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+li {
+  display: inline-block;
+}
+li :active {
+  background-color: #1adb3a;
+}
+li :hover{
+  background-color: #75a010;
+}
+li a{
+  text-decoration: none;
+  color: rgba(11, 10, 65, 0.651);
+}
+li :focus{
+    background-color: blue;
+}
+.head{
+  text-align: center;
+  background-color: darkgray;
+  padding: 25px;
+}
+.mh{
+  font-size: 17pt;
+}
+.sh{
+  font-size: 12pt;
+}
+nav{
+    display: block;
+    height: 52px;
+}
+td{
+  padding: 10px;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0 0em;
+}
+@media screen and (max-width: 768px) {
+  tr{
+      display: inline-grid;
+
+  }
+}

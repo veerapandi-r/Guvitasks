@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Registeration Form</title>
+        <link rel='stylesheet' href='task1.css'>
+        <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css'>
+    </head>
+    <body>
+        <script>
+            function success()
+            {
+                alert('Thank you for submitting details');
+            }		
+        </script>
+        <form method="POST" class='main' onsubmit="success()">
+            <table>
+                <colgroup>
+                    <col class='firstcol'>
+                    <col class='secondcol'>
+                </colgroup>
+                <tbody>
+                    <tr>
+                        <td class='row1'>
+                            Full Name
+                        </td>
+                        <td class='row2'>
+                            <div class='inner'>
+                                <i class='fas fa-user'></i>
+                                <input class='input' type='text' required name='fullname' id='name' placeholder="Full Name">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class='row1'>
+                            Address Line 1
+                        </td>
+                        <td class='row2'>
+                            <div class='inner'>
+                                <i class='far fa-address-book'></i>
+                                <input class='input' type='text' required name='addressline1' id='address1' placeholder="Address Line 1">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class='row1'>
+                            Address Line 2
+                        </td>
+                        <td class='row2'>
+                            <div class='inner'>
+                                <i class='far fa-address-book'></i>
+                                <input class='input' type='text' name='addressline2' id='address2' placeholder="Address Line 2">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class='row1'>
+                            City
+                        </td>
+                        <td class='row2'>
+                            <div class='inner'>
+                                <i class='far fa-building'></i>
+                                <input class='input' type='text' required name='city' id='city' placeholder="City">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class='row1'>
+                            State/Province/Region
+                        </td>
+                        <td class='row2'>
+                            <div class='inner'>
+                                <i class="fas fa-map-marker-alt"></i>
+                                <input class='input' type='text' required name='state' id='state' placeholder="State/Province/Region">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class='row1'>
+                           Postal Code/ZIP
+                        </td>
+                        <td class='row2'>
+                            <div class='inner'>
+                                <i class="far fa-envelope-open"></i>
+                                <input class='input' type='text' required name='zip' id='zip' placeholder="Postal Code/ZIP" onkeydown="return (event.keyCode<65)">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class='row1'>
+                           Country
+                        </td>
+                        <td class='row2'>
+                            <div class='inner'>
+                                <i class="far fa-map"></i>
+                                <select class='select' name='country' id='countrydetails' required >
+								    <option value="" selected disabled hidden>--Select--</option>
+                                    <option value="AR" >Argentina</option>
+                                    <option value="AU" >Australia</option>
+                                    <option value="AT" >Austria</option>
+                                    <option value="BH" >Bahrain</option>
+                                    <option value="BD" >Bangladesh</option>
+                                    <option value="BB" >Barbados</option>
+                                    <option value="BY" >Belarus</option>
+                                    <option value="BE" >Belgium</option>
+                                    <option value="BM" >Bermuda</option>
+                                    <option value="BT" >Bhutan</option>
+                                    <option value="BW" >Botswana</option>
+                                    <option value="BR" >Brazil</option>
+                                    <option value="BN" >Brunei Darussalam</option>
+                                    <option value="BG" >Bulgaria</option>
+                                    <option value="KH" >Cambodia</option>
+                                    <option value="CA" >Canada</option>
+                                    <option value="CV" >Cape Verde</option>
+                                    <option value="KY" >Cayman Islands</option>
+                                    <option value="CN" >China</option>
+                                    <option value="CU" >Cuba</option>
+                                    <option value="CY" >Cyprus</option>
+                                    <option value="DK" >Denmark</option>
+                                    <option value="EG" >Egypt</option>
+                                    <option value="SV" >El Salvador</option>
+                                    <option value="ER" >Eritrea</option>
+                                    <option value="EE" >Estonia</option>
+                                    <option value="ET" >Ethiopia</option>
+                                    <option value="FJ" >Fiji</option>
+                                    <option value="FI" >Finland</option>
+                                    <option value="FR" >France</option>
+                                    <option value="GE" >Georgia</option>
+                                    <option value="DE" >Germany</option>
+                                    <option value="GH" >Ghana</option>
+                                    <option value="GR" >Greece</option>
+                                    <option value="GY" >Guyana</option>
+                                    <option value="HK" >Hong Kong</option>
+                                    <option value="HU" >Hungary</option>
+                                    <option value="IS" >Iceland</option>
+                                    <option value="IS" >India</option>
+                                    <option value="ID" >Indonesia</option>
+                                    <option value="IR" >Iran</option>
+                                    <option value="IQ" >Iraq</option>
+                                    <option value="IE" >Ireland</option>
+                                    <option value="IL" >Israel</option>
+                                    <option value="IT" >Italy</option>
+                                    <option value="JP" >Japan</option>
+                                    <option value="JO" >Jordan</option>
+                                    <option value="KE" >Kenya</option>
+                                    <option value="KR" >Korea</option>
+                                    <option value="KW" >Kuwait</option>
+                                    <option value="LV" >Latvia</option>
+                                    <option value="LU" >Luxembourg</option>
+                                    <option value="MO" >Macao</option>
+                                    <option value="MW" >Malawi</option>
+                                    <option value="MY" >Malaysia</option>
+                                    <option value="MV" >Maldives</option>
+                                    <option value="MU" >Mauritius</option>
+                                    <option value="MX" >Mexico</option>
+                                    <option value="MN" >Mongolia</option>
+                                    <option value="MA" >Morocco</option>
+                                    <option value="NA" >Namibia</option>
+                                    <option value="NR" >Nauru</option>
+                                    <option value="NP" >Nepal</option>
+                                    <option value="NL" >Netherlands</option>
+                                    <option value="NZ" >New Zealand</option>
+                                    <option value="NE" >Niger</option>
+                                    <option value="NG" >Nigeria</option>
+                                    <option value="NO" >Norway</option>
+                                    <option value="OM" >Oman</option>
+                                    <option value="PK" >Pakistan</option>
+                                    <option value="PA" >Panama</option>
+                                    <option value="PG" >Papua New Guinea</option>
+                                    <option value="PH" >Philippines</option>
+                                    <option value="PL" >Poland</option>
+                                    <option value="PT" >Portugal</option>
+                                    <option value="QA" >Qatar</option>
+                                    <option value="RO" >Romania</option>
+                                    <option value="RU" >Russian Federation</option>
+                                    <option value="RW" >Rwanda</option>
+                                    <option value="WS" >Samoa</option>
+                                    <option value="SA" >Saudi Arabia</option>
+                                    <option value="SN" >Senegal</option>
+                                    <option value="SG" >Singapore</option>
+                                    <option value="ZA" >South Africa</option>
+                                    <option value="ES" >Spain</option>
+                                    <option value="LK" >Sri Lanka</option>
+                                    <option value="SD" >Sudan</option>
+                                    <option value="SE" >Sweden</option>
+                                    <option value="CH" >Switzerland</option>
+                                    <option value="TW" >Taiwan</option>
+                                    <option value="TZ" >Tanzania, United Republic of</option>
+                                    <option value="TH" >Thailand</option>
+                                    <option value="TN" >Tunisia</option>
+                                    <option value="TR" >Turkey</option>
+                                    <option value="UG" >Uganda</option>
+                                    <option value="UA" >Ukraine</option>
+                                    <option value="AE" >UAE</option>
+                                    <option value="GB" >United Kingdom</option>
+                                    <option value="US" >United States of America</option>
+                                    <option value="UY" >Uruguay</option>
+                                    <option value="VN" >Viet Nam</option>
+                                    <option value="YE" >Yemen</option>
+                                    <option value="ZR" >Zair</option>
+                                    <option value="ZM" >Zambia</option>
+                                    <option value="ZW" >Zimbabwe</option>
+                                  </select>
+                            </div>
+                              
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class='row1'>
+                            Email
+                        </td>
+                        <td class='row2'>
+                            <div class='inner'>
+                                <i class='fas fa-user'></i>
+                                <input class='input' type='email' required name='email' id='email' placeholder="Email">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class='row1'>
+                            Phone Number
+                        </td>
+                        <td class='row2'>
+                            <div class='inner'>
+                                <i class='fas fa-user'></i>
+                                <input class='input' type='tel' minlength="10" maxlength="10" required name='phno' id='phno' placeholder="Phone Number" onkeydown="return (event.keyCode<65);">
+                            </div>
+                        </td>
+                    </tr>
+                    
+                </tbody>
+
+            </table>
+            <input class='submit' type="submit" name='submitbutton' id='submit'>
+        </form>
+        
+    </body>
+</html>
